@@ -20,5 +20,6 @@ public class userInput {
           }
         }
         System.out.println("Maximum is "+max);
+        System.out.println("Hello");
     }
 }
