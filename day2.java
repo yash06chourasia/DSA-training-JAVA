@@ -187,3 +187,56 @@
 //         }
 // }
 
+//  Maximum element in 2D array
+
+// public class day2 {
+//     public static void main(String[] args) {
+//     int arr[][]={{1,2,3},{4,5,10,6},{8,9,0}};
+//     int max=arr[0][0];
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=0;j<arr[i].length;j++){
+//                    if(arr[i][j]>max){
+//                     max=arr[i][j];
+//                    }
+//                 }
+//             }
+//         System.out.println("Maximum is "+max);  
+//         }
+// }
+
+// WAP to copy the elements of one array to another
+
+// public class day2 {
+
+//     public static void main(String[] args) {
+//         int arr1[]={1,2,3,4,5};
+//         int arr2[]=new int[arr1.length];
+//         for(int i=0;i<arr1.length;i++){
+//             arr2[i]=arr1[i];
+//         }
+//         for(int i=0;i<arr2.length;i++){
+//            System.out.println(arr2[i]);
+//         }
+//     }
+// }
+
+// WAP to find maximum of two array
+// public class day2 {
+
+//     public static void main(String[] args) {
+//         int arr1[]={1,2,5,8,4,3};
+//         int arr2[]={2,7,4,6,1};
+//         int max=arr1[0];
+//         for(int i=0;i<arr1.length;i++){
+//             if(arr1[i]>max){
+//                 max=arr1[i];
+//             }
+//         }
+//         for(int i=0;i<arr2.length;i++){
+//             if(arr2[i]>max){
+//                 max=arr2[i];
+//             }
+//         }
+//         System.out.println("Maximum is :"+max);
+//     }
+// }
