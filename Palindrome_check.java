@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class Palindrome_check {
     public static void main(String[] args) {
-        String str="abcdecba";
+        Scanner inp=new Scanner(System.in);
+        System.out.println("Enter String to check Palindrome :");
+        String str= inp.nextLine();
         boolean check=true;
         for(int i=0;i<str.length()/2;i++){
             
