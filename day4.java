@@ -1,9 +1,9 @@
 // import java.util.ArrayList;
 // import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
+// import java.util.HashSet;
 // import java.util.Scanner;
-import java.util.TreeSet;
+// import java.util.TreeSet;
 
 public class day4 {
 
@@ -117,19 +117,59 @@ public class day4 {
         // System.out.println(map.getOrDefault("four", 4));
 
         // Frequency Count using HashMap
-        HashMap<Character,Integer> map=new HashMap<>();
-        String str="Yash Chourasia";
-        char[]arr=str.toCharArray();
-        // for(char i=0;i<arr.length;i++){
-        //     System.out.println(arr[i]);
+        // HashMap<Character,Integer> map=new HashMap<>();
+        // String str="Yash Chourasia";
+        // char[]arr=str.toCharArray();
+        // // for(char i=0;i<arr.length;i++){
+        // //     System.out.println(arr[i]);
+        // // }
+        // for(int i=0;i<arr.length;i++){
+        //     if(arr[i] !=' '){
+        //         map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+        //     }
         // }
-        for(int i=0;i<arr.length;i++){
-            if(arr[i] !=' '){
-                map.put(arr[i],map.getOrDefault(arr[i],0)+1);
-            }
-        }
-        System.out.println(map);
+        // System.out.println(map);
+
+        // First non repeating character and if there is non return $
+        // String str="YYash Chourasia";
+        // HashMap<Character,Integer> map=new HashMap<>();
+        // for(char ch : str.toCharArray()){
+        //     if(ch !=' '){
+        //         map.put(ch, map.getOrDefault(ch,0)+1);
+        //     }
+        // }
+        // char target='$';
+        // for(char ch : str.toCharArray()){
+        //     if(ch!=' ' && map.get(ch)==1){
+        //         target=ch;
+        //         break;
+        //     }    
+        // }
+        // if(target=='$'){
+        //          System.out.println("$");
+        // }
+        // else{
+        //      System.out.println("The first non repeated character is "+target);
+        // }
+
+        // Rotate the array by 1
+        // int arr[]={7,2,3,4,5,6};
+        // int temp=arr[0];
+        // for(int i=0;i<arr.length-1;i++){
+        //     arr[i]=arr[i+1];
+        // }
+        // arr[arr.length-1]=temp;
+        // for(int i :arr){
+        //     System.out.print(i+"\t");
+        // }
         
+        // Two Sum
+        // int arr[]={2,7,11,15};
+        // int target=9;
+        // HashMap<Integer,Integer>map=new HashMap<>();
+
+
+
 
     }
 }
