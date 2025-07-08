@@ -1,5 +1,7 @@
 // // import java.util.Arrays;
 
+
+// Find the median of the sorted array
 // public class day5 {
 //         static public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 //         int len1=nums1.length;
@@ -51,3 +53,34 @@
 //         System.out.println("The median of the sorted array is : "+value);
 //     }
 // }
+
+// Container with most water
+
+public class day5 {
+    static public int maxArea(int[] height) {
+        int h=height.length;
+        int max=0;
+        for(int i=0;i<h-1;i++){
+            for(int j=i+1;j<h;j++){
+                int min=0;
+                if(height[i]<height[j]){
+                    min=height[i];
+                }
+                else{
+                    min=height[j];
+                }
+                min*=j-i;
+                if(max<min){
+                    max=min;
+                }
+
+            }
+        }
+        return max;
+    }
+    public static void main(String[] args) {
+        int height[]={1,8,6,2,5,4,8,3,7};
+        int capacity=maxArea(height);
+        System.out.println("Container with most water : "+capacity);
+    }
+}
