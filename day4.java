@@ -1,11 +1,25 @@
 // import java.util.ArrayList;
 // import java.util.Collections;
+import java.util.Arrays;
 import java.util.HashMap;
 // import java.util.HashSet;
 // import java.util.Scanner;
 // import java.util.TreeSet;
 
 public class day4 {
+
+     static public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer,Integer>map=new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            int dif=target-nums[i];
+            if(map.containsKey(dif)){
+                return new int[]{map.get(dif),i};
+            }
+            map.put(nums[i],i);
+
+        }
+        return new int[]{};
+    }
 
     public static void main(String[] args) {
         // Collection framework
@@ -163,13 +177,28 @@ public class day4 {
         //     System.out.print(i+"\t");
         // }
         
-        // Two Sum
-        // int arr[]={2,7,11,15};
-        // int target=9;
-        // HashMap<Integer,Integer>map=new HashMap<>();
+        // Two Sum method 1
+        // int arr[]={2,7,9,0,5};
+        // int target=12;
+        // for(int i=0;i<arr.length-1;i++){
+        //     int temp=target-arr[i];
+        //     for(int j=i+1;j<arr.length;j++){
+        //         if(arr[j]==temp){
+        //             System.out.println("Sum found at index : "+i+" and "+j);
+        //             return;
+        //         }
+            
+        //     }
+        // }
 
+        // Two sum method 2
+        int []nums={2,0,11,5,9};
+        int target=9;
 
+        int index[]=twoSum(nums,target);
+        System.out.println(Arrays.toString(index));
 
-
+       
+        
     }
 }
