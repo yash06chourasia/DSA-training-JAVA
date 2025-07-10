@@ -56,7 +56,7 @@
 
 // maximum subarray sum of the given size brute force
 
-public class day6 {
+// public class day6 {
 //     static public int maxSubArray(int[] nums,int size) {
 //         int current=nums[0];
 //        for(int i=0;i<=nums.length-size;i++){
