@@ -53,6 +53,21 @@ public class practice1 {
         }
     }
 
+
+    public static void selectionSort(int[] arr){
+        for(int i=0;i<arr.length-1;i++){
+            int min=i;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[j]<arr[min]){
+                    min=j;
+                }
+            }
+            int temp=arr[i];
+            arr[i]=arr[min];
+            arr[min]=temp;
+            
+        }
+    }
     public static void main(String[] args) {
 
         int arr[]={3,7,2,6,1,9,5,2};
@@ -61,7 +76,8 @@ public class practice1 {
         // int target=in.nextInt();
         // linearSearch(arr,target);
         // binarySearch(arr,target);
-        bubbleSort(arr);
+        // bubbleSort(arr);
+        // selectionSort(arr);
         System.out.println("Sorted array is : ");
 
         for(int i=0;i<arr.length;i++){
