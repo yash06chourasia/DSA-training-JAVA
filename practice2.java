@@ -36,10 +36,10 @@ public class practice2 {
         // System.out.println("Simple interest is "+(p*r*t/100));
 
         // Compound interest
-        //  int p=1000;
+        // float p=1000;
         // int r=10;
-        // int t=2;
-        // System.out.println("Compound interest is "+(p*(1+r/100)*t));
+        // float t=2;
+        // System.out.println("Compound interest is "+(p*(Math.pow((1+r/100),t))));
 
         // Farhenheit to Celsius
 
