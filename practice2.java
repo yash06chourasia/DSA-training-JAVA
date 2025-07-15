@@ -47,6 +47,15 @@ public class practice2 {
         // int c=(f-32)*5/9;
         // System.out.println("Celsius is "+c);
 
+// Even odd check using bitwise and
+        int n=7;
+        if((n & 1) == 1){
+            System.out.println("Odd");
+        }
+        else{
+            System.out.println("Even");
+        }
+
     }
 
 }
