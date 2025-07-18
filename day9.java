@@ -102,7 +102,30 @@
     temp.next = temp.next.next;
 
     }
-    
+    public void middleOfList(){
+        if(head==null){
+            return ;
+        }
+        if(head.next==null){
+            System.out.println(head.data);
+            return;
+        }
+        int count=0;
+        Node temp=head;
+        while(temp!=null)
+        {   count++;
+            temp=temp.next;
+        }
+        Node ttemp=head;
+        int i=0;
+        int mid=(count-1)/2;
+        while(i<mid){
+            ttemp=ttemp.next;
+            i++;
+        }
+        System.out.println(ttemp.data);   
+    }
+
    public static void main(String[] args) {
         day9 list=new day9();
         list.addToFirst(5);
@@ -110,11 +133,13 @@
         list.addToLast(15);
         list.addToFirst(1);
         list.addToIndex(8,0);
-        list.deleteFirst();
-        list.deleteLast();
-        list.addToLast(20);
-        list.deleteAtPosition(1);
+        // list.deleteFirst();
+        // list.deleteLast();
+        // list.addToLast(20);
+        // list.deleteAtPosition(1);
         list.display();
+        System.out.println();
+        list.middleOfList();
 
     
    } 
