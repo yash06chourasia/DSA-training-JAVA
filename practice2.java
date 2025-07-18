@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class practice2 {
     
     public static void main(String[] args) {
@@ -48,14 +46,26 @@ public class practice2 {
         // System.out.println("Celsius is "+c);
 
 // Even odd check using bitwise and
-        int n=7;
-        if((n & 1) == 1){
-            System.out.println("Odd");
-        }
-        else{
-            System.out.println("Even");
-        }
+        // int n=7;
+        // if((n & 1) == 1){
+        //     System.out.println("Odd");
+        // }
+        // else{
+        //     System.out.println("Even");
+        // }
 
+        // Fibonacci Series 
+
+    //    int num=1;
+    //    System.out.println("Fibonacci series upto "+num+" digit is : ");
+    //    int first=0;
+    //    int second=1;
+    //    for(int i=0;i<num;i++){
+    //     System.out.println(first);
+    //     int sum=first+second;
+    //     first=second;
+    //     second=sum;
+    //   }  
     }
 
 }
