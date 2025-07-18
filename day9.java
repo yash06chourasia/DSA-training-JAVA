@@ -78,6 +78,31 @@
        }
        temp.next=null;
     }
+    public void deleteAtPosition(int index){
+    if (head == null) {
+        return;
+    }
+    if (index == 0) {
+        head = head.next;
+        return;
+    }
+    Node temp = head;
+    int i = 0;
+    while (i < index - 1) {
+        if (temp == null || temp.next == null) {
+            return;
+        }
+        temp = temp.next;
+        i++;
+    }
+    if (temp.next == null) {
+        return;
+    }
+
+    temp.next = temp.next.next;
+
+    }
+    
    public static void main(String[] args) {
         day9 list=new day9();
         list.addToFirst(5);
@@ -87,6 +112,8 @@
         list.addToIndex(8,0);
         list.deleteFirst();
         list.deleteLast();
+        list.addToLast(20);
+        list.deleteAtPosition(1);
         list.display();
 
     
