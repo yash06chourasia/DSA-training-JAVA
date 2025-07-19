@@ -229,3 +229,55 @@
         
 //     }
 //}
+
+// Diagonal Sum of 2D array
+public class practice2 {
+        public static void main(String[] args) {
+        int[][]arr={{1,2,3},{4,5,6},{7,8,9}};
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+        long sum=diagonalSum(arr);
+        System.out.println("Sum of diagonal element is "+sum);
+   }
+   public static long diagonalSum(int arr[][]){
+        long leftsum=leftdiagonalSum(arr);
+        long rightsum=rightdiagonalSum(arr);
+        long sum=leftsum+rightsum;
+        if(arr.length%2!=0){
+                int idx=arr.length/2;
+                sum-=arr[idx][idx];
+                return sum;       
+         }else{
+                return sum;
+         }
+   
+        }
+   public static long leftdiagonalSum(int arr[][]){
+        int lsum=0;
+        for(int i=0;i<arr.length;i++){
+                for(int j=0;j<arr[i].length;j++){
+                        if(i==j){
+                                lsum+=arr[i][j];
+                        }
+                }
+        }
+        return lsum;
+        
+   }
+   public static long rightdiagonalSum(int arr[][]){
+        int rsum=0;
+        for(int i=0;i<arr.length;i++){
+                for(int j=0;j<arr[i].length;j++){
+                        if(i+j==arr[i].length-1){
+                                rsum+=arr[i][j];
+                        }
+                }
+        }
+        return rsum;
+   }
+   
+}
