@@ -114,7 +114,7 @@ public class day4 {
         // data.add(10);
         // // data.add(1,4); cannot done at particular index
         // data.add(23);
-        // data.add(2);
+        // data.add(2);+
         // data.add(10);
         // System.out.println(data);
 
