@@ -93,7 +93,6 @@ public class circularLinkList {
         head=head.next;
         tail.next=head;
     }
-
     public static void main(String[] args) {
         circularLinkList list=new circularLinkList();
         // list.addToFirst(20);
