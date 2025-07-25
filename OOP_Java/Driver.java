@@ -3,6 +3,10 @@ public class Driver {
     // Static can be used outside scope without creating object
     String name="Ram";
     String dateOfLicense;
+    public static void printMinAge(){
+        System.out.println("min age is "+minAge);
+
+    }
     // For above two object creation is necessary to use
     public static void main(String[] args) {
         Car myCar=new Car();
@@ -16,6 +20,7 @@ public class Driver {
         Driver myDriver=new Driver();
         // Object created to use non static member of a class
         System.out.println(myDriver.name);
+        printMinAge();
     }
 }
 
