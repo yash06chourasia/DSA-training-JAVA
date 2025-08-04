@@ -1,8 +1,9 @@
 class Vehicle {
-    public void display() {
+    protected void display() {
         System.out.println("I'm in Vehicle class");
     }
 }
+// Inheritance can work with default public protected access modifier easily
 
 class TwoWheeler extends Vehicle {
 }
