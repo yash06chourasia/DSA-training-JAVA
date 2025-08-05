@@ -9,7 +9,7 @@ class Node{
     }
 }
 class Build{
-    static Node build(Node root,int val){
+    Node build(Node root,int val){
         if(root==null){
             return new Node(val);
         }
@@ -21,7 +21,7 @@ class Build{
         }
         return root;
     }
-    static void search(Node root,int val){
+    void search(Node root,int val){
         if(root==null){
             System.out.println("Empty tree");
         }
@@ -39,7 +39,7 @@ class Build{
 
 public class bst {
     public static void main(String[] args) {
-        int arr[]={5,1,24,6,4,6,46,78,9};
+        int arr[]={5,1,24,4,6,46,78,9};
         Build list=new Build();
         Node root=null;
         for(int val :arr){
