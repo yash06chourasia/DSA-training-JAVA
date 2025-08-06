@@ -26,8 +26,8 @@ class Square extends Shape{
 }
 public class Test{
     public static void main(String[] args) {
-        Circle c=new Circle(10);
-        Square s=new Square(10);
+        Circle c=new Circle(5);
+        Square s=new Square(10.3);
         System.out.println(c.calculateArea());
         System.out.println(s.calculateArea());
     }
