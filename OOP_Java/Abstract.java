@@ -11,7 +11,7 @@ class Cat extends Animal {
         System.out.println("Cat says: Meow Meow");
     }
 }
-
+// This is even example of method overriding
 public class Abstract {
     public static void main(String[] args) {
         Animal dog = new Dog();
