@@ -1,4 +1,4 @@
-package Stack_Queue;
+
 class QueueDef{
     int front=0;
     int rear=-1;

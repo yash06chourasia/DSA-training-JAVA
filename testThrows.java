@@ -1,4 +1,4 @@
-package Exceptions;
+
 public class testThrows {
      static public void printName(String name)throws IllegalArgumentException{
         if(name.contains("-")||name.contains(" ")){

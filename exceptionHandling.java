@@ -1,7 +1,4 @@
-package Exceptions;
-import java.util.InputMismatchException;
 import java.util.Scanner;
-
 public class exceptionHandling {
     public static void main(String[] args) {
         Scanner inp=new Scanner(System.in);
