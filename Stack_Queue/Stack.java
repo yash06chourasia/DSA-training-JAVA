@@ -1,3 +1,4 @@
+package Stack_Queue;
 class StackDef{
     int top=-1;
     int n;
