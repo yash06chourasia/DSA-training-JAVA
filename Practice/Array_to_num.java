@@ -1,3 +1,4 @@
+package Practice;
 public class Array_to_num {
 
     public static void main(String[] args) {

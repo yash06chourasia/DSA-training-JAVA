@@ -1,3 +1,5 @@
+package Exceptions;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class exceptionHandling {
@@ -10,11 +12,11 @@ public class exceptionHandling {
         try {
             int div=n/d;
             System.out.printf("Integer Division is %d",div);
-        } 
+        }
         catch (ArithmeticException e) {
             System.out.println("Cannot divide by zero");
             // System.out.printf("%s",e.getMessage());
            
-        }
+        } 
     }
 }
